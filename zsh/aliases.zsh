@@ -1,0 +1,8 @@
+alias gst="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gs="git stash"
+alias gch="git checkout"
+alias gcb="git checkout -b"
+alias gp="git pull -u origin/"
+alias gpsh="git push -u origin/"

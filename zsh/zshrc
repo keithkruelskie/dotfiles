@@ -1,0 +1,23 @@
+export DOTFILES="$HOME/dotfiles"
+
+#core config - env, aliases, functions
+source "$DOTFILES/zsh/env.zsh"
+source "$DOTFILES/zsh/aliases.zsh"
+source "$DOTFILES/zsh/functions.sh"
+
+#work profile overrides
+[[ -n "WORK_PROFILE" ]] && source "$DOTFILES/zsh/profiles/$WORK_PROFILE.zsh"
+
+#local machine overrides
+if [[ -f ~/.dotfiles/zsh/local.zsh ]]
+    source ~/.dotfiles/zsh/local.zsh
+else
+    echo "Missing ~/.dotfiles/zsh/local.zsh"
+    echo "Copy from local.zsh.example and customize."
+fi
+
+DOTFILES_ENV = "$HOME/.config/dotfiles/env"
+
+if [[ -f "$DOTFILES_ENV" ]]; then
+    source "$DOTFILES_ENV"
+fi

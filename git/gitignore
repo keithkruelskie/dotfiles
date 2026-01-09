@@ -1,0 +1,6 @@
+.env
+**/.env
+
+zsh/local.zsh
+git/gitconfig.local
+~/.config/dotfiles/env

@@ -1,0 +1,9 @@
+[user]
+    name = "Keith"
+    email = "keith@company.com"
+
+[init]
+    branch = main
+
+[github]
+    user = "keith"

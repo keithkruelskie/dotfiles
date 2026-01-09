@@ -1,0 +1,15 @@
+[user]
+    name = "Default User"
+    email = "default@123abc.com"
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.dotfiles/git/gitconfig.local
+
+[core]
+[color]
+[init]
+    branch = main
+[help]
+[alias]
+    hist = log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+

@@ -1,0 +1,5 @@
+export GIT_AUTHOR_NAME="Your Name"
+export GIT_AUTHOR_EMAIL="you@example.com"
+export GH_USERNAME="your-github-handle"
+
+export COMPANY_NAME=""
